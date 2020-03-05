@@ -1,6 +1,6 @@
 {
   "name": "lerogen",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Create massive mock data",
   "main": "./lib/index.js",
   "license": "MIT",
