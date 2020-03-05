@@ -18,10 +18,10 @@ and then use the library
 
 ## Usage
 
-```
+```js
 import lerogen from "lerogen"
 
-const users = lerogen.Create(1).Collection(() => ({
+const users = lerogen.create(1).collection(() => ({
     id: lerogen.types.guid(),
     name: lerogen.types.name(),
     email: lerogen.types.email(),
@@ -39,10 +39,10 @@ console.log(users)
 #### You can also output that in a JSON file
 
 
-```
+```js
 import lerogen from "lerogen"
 
-lerogen.Create(1).Model(() => ({
+lerogen.create(1).model(() => ({
     id: lerogen.types.guid(),
     name: lerogen.types.name(),
     email: lerogen.types.email(),
@@ -53,24 +53,24 @@ lerogen.Create(1).Model(() => ({
 
 #### You can create complexes data
 
-```
-lerogen.Create(10).Collection(() => ({
-  id: Entry.types.guid(),
-  name: Entry.types.name(),
-  email: Entry.types.email(2, ".", ".com.br"),
-  money: Entry.types.currency("R$", 0, 900),
+```js
+lerogen.create(10).collection(() => ({
+  id: lerogen.types.guid(),
+  name: lerogen.types.name(),
+  email: lerogen.types.email(2, ".", ".com.br"),
+  money: lerogen.types.currency("R$", 0, 900),
   status: {
-    active: Entry.types.bool(70),
-    role: Entry.types.enum(["Player", "Administrator"]),
-    age: Entry.types.int(18, 35),
-    height: Entry.types.int(160, 190),
+    active: lerogen.types.bool(70),
+    role: lerogen.types.enum(["Player", "Administrator"]),
+    age: lerogen.types.int(18, 35),
+    height: lerogen.types.int(160, 190),
   },
-  items: Entry.Create(5).Collection(() => ({
-    id: Entry.types.guid(),
-    description: Entry.types.desc(),
-    value: Entry.types.currency("R$", 10, 100)
+  items: lerogen.create(5).collection(() => ({
+    id: lerogen.types.guid(),
+    description: lerogen.types.desc(),
+    value: lerogen.types.currency("R$", 10, 100)
   })),
-  createdAt: Entry.types.date("2020-02-01", "2020-02-18", "yyyy-MM-dd HH:mm")
+  createdAt: lerogen.types.date("2020-02-01", "2020-02-18", "yyyy-MM-dd HH:mm")
 }));
 ```
 
