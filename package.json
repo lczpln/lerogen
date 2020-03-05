@@ -1,11 +1,20 @@
 {
   "name": "lerogen",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Create massive mock data",
+  "main": "./lib/index.js",
   "license": "MIT",
-  "scripts": {
-    "start": "node src/example.js"
+  "bin": {
+    "lerogen": "bin/lerogen.js"
   },
+  "keywords": [
+    "mock",
+    "create-mock",
+    "fake-data",
+    "random-data",
+    "random-mock"
+  ],
+  "author": "Lucas Pellison",
   "dependencies": {
     "@types/node": "^13.7.7",
     "date-fns": "^2.10.0",
