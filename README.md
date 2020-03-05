@@ -76,11 +76,11 @@ lerogen.create(10).collection(() => ({
 
 ## Creators
 
-**Create** recives a number of collections or models to be created that returns *Model* and *Collection*
+**create** - recives a number of collections or models to be created that returns *Model* and *Collection*
 
-**Model** should retuns an anonymous function that should returns an object *Only used to output JSON*
+**model** - should retuns an anonymous function that should returns an object *Only used to output JSON*
 
-**Collection** should retuns an anonymous function that should returns an object *Only used to output JSON*
+**collection** - should retuns an anonymous function that should returns an object *Only used to output JSON*
 
 ## Types
 
