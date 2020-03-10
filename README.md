@@ -1,6 +1,6 @@
 # Lerogen
 
-Lerogen is an easy random mock generator that can be use with a fake api
+Lerogen is an easy random mock generator that can be used with a fake api
 
 ## Install
 
